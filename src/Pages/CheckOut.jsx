@@ -147,7 +147,7 @@ const CheckOut = () => {
           </div>
 
           {/* Right Section */}
-          <div className="max-w-full md:max-w-[450px] flex flex-col gap-8">
+          <div className="max-w-full md:max-w-[450px] flex flex-1 flex-col gap-8">
             {/* Hotel Details */}
             <div className="h-auto bg-white rounded-md flex flex-col gap-4">
               <img

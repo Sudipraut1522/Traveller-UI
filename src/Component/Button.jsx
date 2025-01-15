@@ -6,7 +6,7 @@ const Button = ({ label, className, onClick, width, ...props }) => {
       <button
         style={{ width }}
         onClick={onClick}
-        className={` py-1 border border-[#2F80ED] rounded-sm h-[70px] md:h-[40px] text-[12px] md:text-[15px]  items-center ${className}`}
+        className={` md:py-1 border border-[#2F80ED] rounded-sm h-[40px] md:h-[40px] text-[14px] md:text-[15px]  items-center ${className}`}
         {...props}
       >
         {label}

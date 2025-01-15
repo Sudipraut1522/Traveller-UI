@@ -17,7 +17,7 @@ const Navbar = () => {
   }, [email, setEmail]);
 
   return (
-    <div className="flex h-[70px] sm:h-[68px] items-center sticky top-0 z-20 bg-white px-6 sm:px-0 ">
+    <div className="flex h-[70px] sm:h-[68px] items-center sticky top-0 z-20 bg-white px-6 sm:px-0 shadow shadow-gray-200 ">
       <div className="flex w-[1600px] mx-auto justify-between items-center">
         <Link to="/">
           <div>

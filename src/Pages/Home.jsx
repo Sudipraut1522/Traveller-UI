@@ -4,6 +4,7 @@ import Footer from "../Component/Footer";
 import Search from "../Component/Search";
 
 import Slideshow from "../Component/SlideShow";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const sliderImages = [
@@ -18,7 +19,7 @@ const Home = () => {
       <div className=" w-full sm:max-w-[1600px] mx-auto p-4">
         <div className="relative h-full sm:h-[500px] sm:mt-0 rounded-lg">
           <Slideshow slideImages={sliderImages} />
-          <div className="absolute inset-0 bg-black bg-opacity-20 rounded-md"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-40 rounded-md"></div>
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center ">
             <h1 className="text-white text-2xl sm:text-4xl lg:text-6xl font-bold">
               Enjoy Your Dream Vacation
@@ -30,7 +31,9 @@ const Home = () => {
           </div>
 
           <div className=" hidden md:block absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full sm:max-w-[1200px] h-[64px] text-black z-10 py-2 px-4">
-            <Search />
+            <Link to="/searchresult">
+              <Search />
+            </Link>
           </div>
         </div>
 

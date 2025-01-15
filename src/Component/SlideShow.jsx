@@ -7,8 +7,7 @@ const divStyle = {
   alignItems: "center",
   justifyContent: "center",
   height: "500px",
-  with: "1600px",
-};
+    };
 
 const arrowStyle = {
   cursor: "default",

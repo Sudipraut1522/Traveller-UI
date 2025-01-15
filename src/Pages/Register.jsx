@@ -20,7 +20,6 @@ const Register = () => {
   });
 
   const onSubmit = (data) => {
-    console.log("Form submitted with data:", data);
     reset();
   };
 

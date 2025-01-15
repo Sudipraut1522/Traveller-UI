@@ -32,7 +32,7 @@ const ProductDetails = () => {
   return (
     <div>
       <div className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 ">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="col-span-2">
               <img
@@ -42,7 +42,7 @@ const ProductDetails = () => {
               />
             </div>
 
-            <div className="grid grid-rows-2 gap-4 hidden sm:block">
+            <div className=" flex md:flex-col items-center justify-center gap-2 md:gap-4 flex-wrap w-full">
               {hotel.image.slice(1, 3).map((img, index) => (
                 <img
                   key={index}
@@ -127,13 +127,18 @@ const ProductDetails = () => {
                 <img
                   src="/Frame-removebg-preview.png"
                   alt=""
-                  className="sm:h-[300px] sm:w-[180px]"
+                  className="sm:h-[300px] w-[100px] sm:w-[180px]"
                 />
               </div>
             </div>
-            <Rooms />
-            <Rooms />
-            <Rooms />
+
+            {[1, 2, 3].map((index) => {
+              return (
+                <div key={index}>
+                  <Rooms />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

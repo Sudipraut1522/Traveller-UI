@@ -181,7 +181,7 @@ const SearchResult = () => {
               </h1>
               <div className="flex w-full items-center justify-between">
                 {/* Filter Buttons */}
-                <div className="md:pt-14 pt-0 w-full rounded-md text-gray-400 overflow-hidden flex h-auto">
+                <div className="md:pt-14 px-4 pt-0 w-full rounded-md flex-wrap text-gray-400 overflow-hidden flex h-auto ">
                   {buttonLabels?.map((item, index) => (
                     <Button
                       key={index}
@@ -307,11 +307,11 @@ const SearchResult = () => {
 
             {/* Load More Button */}
             {filteredHotels.length > 5 && (
-              <div className="flex justify-center mt-4 p-6">
+              <div className="flex justify-center mt-4 ">
                 <Button
                   label="Load more results"
                   onClick={handleMoreRoom}
-                  className="bg-[#2F80ED] text-white p-4 rounded-lg shadow-lg hover:shadow-blue-600"
+                  className="bg-[#2F80ED] text-white p-2 rounded-lg shadow-lg hover:shadow-blue-600"
                 />
               </div>
             )}
